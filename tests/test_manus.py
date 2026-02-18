@@ -492,13 +492,16 @@ class TestCLI(unittest.TestCase):
         self.assertEqual(args.name, "Research")
         self.assertEqual(args.instruction, "Be detailed")
 
-    def test_missing_resource(self):
-        with self.assertRaises(SystemExit):
-            self.parser.parse_args([])
+    def test_no_args_prints_help(self):
+        """No arguments should print help to stdout and return 0."""
+        result = manus.main([])
+        self.assertEqual(result, 0)
 
-    def test_missing_action(self):
-        with self.assertRaises(SystemExit):
-            self.parser.parse_args(["tasks"])
+    def test_resource_only_prints_help(self):
+        """Resource without action should print help and exit."""
+        with self.assertRaises(SystemExit) as ctx:
+            manus.main(["tasks"])
+        self.assertEqual(ctx.exception.code, 0)
 
     def test_tasks_create_missing_prompt(self):
         with self.assertRaises(SystemExit):

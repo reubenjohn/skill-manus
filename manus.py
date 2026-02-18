@@ -556,12 +556,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--base-url", default=BASE_URL, help=argparse.SUPPRESS)
 
     resources = parser.add_subparsers(
-        dest="resource", required=True, metavar="<resource>"
+        dest="resource", metavar="<resource>"
     )
 
     for res_name, (res_help, actions) in COMMANDS.items():
         rp = resources.add_parser(res_name, help=res_help)
-        acts = rp.add_subparsers(dest="action", required=True, metavar="<action>")
+        acts = rp.add_subparsers(dest="action", metavar="<action>")
 
         for act_name, (_, act_help, arg_defs) in actions.items():
             ap = acts.add_parser(act_name, help=act_help)
@@ -617,7 +617,16 @@ def _progress(message: str) -> None:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = build_parser()
-    args = parser.parse_args(argv)
+    args = parser.parse_args(argv if argv is not None else None)
+
+    if not getattr(args, "resource", None):
+        parser.print_help()
+        return 0
+
+    if not getattr(args, "action", None):
+        # Re-parse with just the resource to get its subparser help
+        parser.parse_args([args.resource, "--help"])
+        return 0  # pragma: no cover (--help exits)
 
     api_key: str = os.environ.get("MANUS_API_KEY", "")
     if not api_key:
