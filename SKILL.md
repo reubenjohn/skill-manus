@@ -1,7 +1,7 @@
 ---
 name: manus
 description: CLI client for the Manus AI API. Create and manage AI agent tasks, upload files, configure webhooks, and manage projects. Requires MANUS_API_KEY env var.
-user-invocable: true
+user-invokable: true
 ---
 
 # Manus AI CLI
@@ -20,6 +20,12 @@ Zero-dependency Python CLI for all 13 Manus API endpoints.
 
 ```bash
 export MANUS_API_KEY="your-key"  # Get at https://manus.im
+```
+
+**Reeve Desk:** The API key is stored in `.mcp.json` at `mcpServers.manus-mcp.env.MANUS_MCP_API_KEY`. Extract it with:
+
+```bash
+MANUS_API_KEY=$(python3 -c "import json; print(json.load(open('.mcp.json'))['mcpServers']['manus-mcp']['env']['MANUS_MCP_API_KEY'])")
 ```
 
 ## Quick Reference
@@ -77,6 +83,31 @@ python3 manus.py projects create --name "Research" --instruction "Always cite so
 
 # Create task in project
 python3 manus.py tasks create --prompt "Find papers on X" --project-id proj_abc123
+```
+
+## Connectors
+
+Pass connector UUIDs to give Manus access to the user's apps. Must be pre-configured via OAuth at manus.im.
+
+**Common connectors:**
+
+| Connector | UUID | Type |
+|-----------|------|------|
+| My Browser | `be268223-40b2-4f3c-a907-c12eb1699283` | builtin |
+| Gmail | `9444d960-ab7e-450f-9cb9-b9467fb0adda` | builtin |
+| Google Calendar | `dd5abf31-7ad3-4c0b-9b9a-f0a576645baf` | builtin |
+| Google Drive | `f8900a57-4bd7-46cc-83a3-5ebd2420a817` | builtin |
+| GitHub | `bbb0df76-66bd-4a24-ae4f-2aac4750d90b` | builtin |
+| Notion | `9c27c684-2f4f-4d33-8fcf-51664ea15c00` | mcp |
+| Slack | `001e6a99-5585-4b3e-b8cb-533fe24d7788` | mcp |
+
+Full list (70+ connectors): [api-reference.md](docs/api-reference.md) or [PublicListConnectors.json](docs/PublicListConnectors.json)
+
+Discovery endpoint: `POST https://api.manus.im/connectors.v1.ConnectorsPublicService/PublicListConnectors`
+
+```bash
+# Task using My Browser (for authenticated web access)
+python3 manus.py tasks create --prompt "Check Venmo settlements" --connector be268223-40b2-4f3c-a907-c12eb1699283
 ```
 
 ## Error Handling
