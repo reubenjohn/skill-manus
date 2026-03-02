@@ -179,7 +179,7 @@ def endpoint(
                 if i < len(args):
                     path_vars[name] = args[i]
                 elif name in kwargs:
-                    path_vars[name] = kwargs.pop(name)
+                    path_vars[name] = kwargs[name]
             resolved: str = path_template.format(**path_vars)
 
             if send:
