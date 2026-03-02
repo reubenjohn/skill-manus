@@ -22,12 +22,6 @@ Zero-dependency Python CLI for all 13 Manus API endpoints.
 export MANUS_API_KEY="your-key"  # Get at https://manus.im
 ```
 
-**Reeve Desk:** The API key is stored in `.mcp.json` at `mcpServers.manus-mcp.env.MANUS_MCP_API_KEY`. Extract it with:
-
-```bash
-MANUS_API_KEY=$(python3 -c "import json; print(json.load(open('.mcp.json'))['mcpServers']['manus-mcp']['env']['MANUS_MCP_API_KEY'])")
-```
-
 ## Quick Reference
 
 | Command | Description |
@@ -107,7 +101,7 @@ Discovery endpoint: `POST https://api.manus.im/connectors.v1.ConnectorsPublicSer
 
 ```bash
 # Task using My Browser (for authenticated web access)
-python3 manus.py tasks create --prompt "Check Venmo settlements" --connector be268223-40b2-4f3c-a907-c12eb1699283
+python3 manus.py tasks create --prompt "Check my recent emails" --connector 9444d960-ab7e-450f-9cb9-b9467fb0adda
 ```
 
 ## Error Handling

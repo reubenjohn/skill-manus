@@ -1,0 +1,734 @@
+{
+    "connectors": [
+        {
+            "uid": "001e6a99-5585-4b3e-b8cb-533fe24d7788",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Slack",
+            "iconUrl": "https://files.manuscdn.com/assets/image/slack.png",
+            "iconUrlDark": "https://files.manuscdn.com/assets/image/slack.png",
+            "brief": "Read and write Slack conversations in Manus",
+            "description": "Search, extract, read, and write Slack conversations to turn discussions into actions, automated workflows, and results."
+        },
+        {
+            "uid": "9c27c684-2f4f-4d33-8fcf-51664ea15c00",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Notion",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/dafefc2ce61fde1fb5310d4542403bc866bfa70c931d8b2ff3d9f8788fd6cfcf.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/dafefc2ce61fde1fb5310d4542403bc866bfa70c931d8b2ff3d9f8788fd6cfcf.webp",
+            "brief": "Search workspace content, update notes, and automate workflows in Notion",
+            "description": "Notion MCP lets you connect tools to your Notion workspace, so you can create, edit, search, and organize content straight from Manus."
+        },
+        {
+            "uid": "433d2fe0-e56d-42b2-8625-9996eab0bb1d",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Zapier",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/01/7987dc16420394246952169abacf962693814e0fe7c17d093d4a8d0544ffb57d.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/01/7987dc16420394246952169abacf962693814e0fe7c17d093d4a8d0544ffb57d.webp",
+            "brief": "Connect Manus and automate workflows across thousands of apps",
+            "description": "Search data across your apps and execute real actions by connecting Manus to the Zapier platform. Automate workflows like sending emails, updating CRMs, scheduling meetings, and more through conversation."
+        },
+        {
+            "uid": "219459c8-f04d-41af-9a0d-6f9159bf9205",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Asana",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/03/0f4586932afaf3123286354b1f12cfb7b070783e077928d08d46968daa188341.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/03/0f4586932afaf3123286354b1f12cfb7b070783e077928d08d46968daa188341.webp",
+            "brief": "Streamline project and task management with Asana",
+            "description": "Tap into Asana’s Work Graph to easily manage, update, and oversee tasks, projects, and goals. Enhance your workflows with AI recommendations by Manus."
+        },
+        {
+            "uid": "40ecbda4-5aaf-4e95-bf54-679299ea1c19",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "monday.com",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/2c7aa7e85361b00c8b78eeae6dba2814db4af89348fa0bbeb8cc826cad01055c.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/2c7aa7e85361b00c8b78eeae6dba2814db4af89348fa0bbeb8cc826cad01055c.webp",
+            "brief": "Coordinate tasks, manage boards, and streamline your project workflows",
+            "description": "Access monday.com features such as searching boards, managing items and columns, assigning owners, setting timelines, and posting updates."
+        },
+        {
+            "uid": "f8405590-5602-4fee-bfd6-f221623e6f72",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Make",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/12/0d703014b0345db74e475f8aeaf21a1878e33f6b8f1663ef6dc15fed795c3f5a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/12/289341c5c850d350583b9bfc63702b1ab985f10c496529ac3f83908aea10a601.webp",
+            "brief": "Turn Make workflows into AI tools for intelligent automation execution",
+            "description": "Integrate Make with Manus to discover and execute custom automations, leveraging Make's powerful app integration capabilities to enhance AI functionality and boost productivity."
+        },
+        {
+            "uid": "982c169d-0c89-4dbd-95fd-30b49cc2f71e",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Linear",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/27837739253d7306aedc06a7014c4414dc493b49a8c298d47018af0bb447de27.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/27837739253d7306aedc06a7014c4414dc493b49a8c298d47018af0bb447de27.webp",
+            "brief": "Track issues, manage projects, and organize workflows across your team",
+            "description": "Easily manage issues, projects, and team workflows in Linear using natural language. Create and update tasks, track development, plan cycles, and streamline project management for greater efficiency."
+        },
+        {
+            "uid": "74d21d62-2ba7-4840-a918-c8327db5c711",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Atlassian",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/e9fd7a258a7fbfc4db4c51ea05a16536442678f0d730831908beda3d1b0f4303.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/e9fd7a258a7fbfc4db4c51ea05a16536442678f0d730831908beda3d1b0f4303.webp",
+            "brief": "Search, create, and manage Jira, Confluence, and Compass",
+            "description": "Bring Jira, Confluence, and Compass into Manus to search, summarize, create, and update issues, pages, and documentation."
+        },
+        {
+            "uid": "e08b2bda-a4a6-488a-b397-c72f0923bdf4",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "ClickUp",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/10/ab708a20a14dea61fb13f8eacb2cb3436da287f0612bed552f95c6552fc9288d.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/10/ab708a20a14dea61fb13f8eacb2cb3436da287f0612bed552f95c6552fc9288d.webp",
+            "brief": "Automate task management and project workflows with ClickUp",
+            "description": "Create, update, and search tasks across your ClickUp workspace. Keep projects organized with lists and folders and power your team productivity."
+        },
+        {
+            "uid": "942ea72c-09f6-46f0-b4b3-f9890a6edbc5",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "OpenAI",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/7ce6c551103d3a4b3fd18600e1d4f352a67dd0892948b4eff31d662cd8b2bae9.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/e0568781bf237872ccc0e37e2a473016904886c9c9f4c1938bdcf2e477652e97.webp",
+            "brief": "Leverage GPT model series for intelligent text generation and processing",
+            "description": "Utilize advanced GPT language models for intelligent text generation, conversational interaction, and creative content creation with comprehensive AI services."
+        },
+        {
+            "uid": "84ab78ef-139c-48ff-acd4-cba718b8a484",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Supabase",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/178c50ad48998d8331a9667ef3dcd1638355bc2f4933e61f35bf9c7140d141c8.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/178c50ad48998d8331a9667ef3dcd1638355bc2f4933e61f35bf9c7140d141c8.webp",
+            "brief": "Manage Supabase projects, query databases, and organize data efficiently",
+            "description": "Interact with your Supabase projects, supporting tasks like managing tables, running SQL queries, searching docs, deploying edge functions, and updating project settings."
+        },
+        {
+            "uid": "a50c5d31-af5e-4e01-a992-057663a7ee1f",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Vercel",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/11/584a63a49ff0a202e70d65272f127de6f1c30b0f0b6448489bb85826b664ebcf.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/11/4739258a11899360a5f080e7fca21fa266c5e25485560adc5dd33c1017a63309.webp",
+            "brief": "Manage Vercel projects, deployments, and domains",
+            "description": "Manage Vercel deployments, access build logs, check domain availability, purchase domains, and search official documentation to streamline your development workflows."
+        },
+        {
+            "uid": "815b5a30-463e-4662-8da7-081e3b5dfc7d",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Anthropic",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/fada6422697a124b1d39c3d0d493894f98e504cb5eebfd35c9e1037f70b14f7a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/e294daa9bbb965e50193c91790cf3c46effd9d2a9c2d5b03c05815f67d045486.webp",
+            "brief": "Access reliable AI assistant services with safe and intelligent conversations",
+            "description": "Access safe and reliable AI assistant services, supporting intelligent conversations, content creation, and complex task processing with safety-usefulness balance."
+        },
+        {
+            "uid": "9a0c8590-c0d9-498b-9b3d-bd0df0dbc134",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Neon",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/aef286b6976734b537820120d20f66caca6e90a70f3df486895c7bf53dc2bd35.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/aef286b6976734b537820120d20f66caca6e90a70f3df486895c7bf53dc2bd35.webp",
+            "brief": "Use natural language to query and manage Postgres",
+            "description": "Effortlessly manage your Neon Postgres databases with natural language commands. Use the Neon MCP Server to create projects, run queries, and perform schema changes."
+        },
+        {
+            "uid": "4157dedf-1326-4be8-9295-51416c7dba62",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Google Gemini",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/5defb3e712ef68ad178f579320b9281cd095e8acc54d3c9657f6a4d98ef75ece.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/5defb3e712ef68ad178f579320b9281cd095e8acc54d3c9657f6a4d98ef75ece.webp",
+            "brief": "Process multimodal content including text, images, and code seamlessly",
+            "description": "Process multimodal content analysis tasks, integrating text, image, and code processing capabilities for comprehensive AI assistance and intelligent solutions."
+        },
+        {
+            "uid": "4c55391d-38ea-4a36-a670-a59a1c7680cb",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Prisma Postgres",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/79bbf3cb8b75116c60082b9177a000dbb86fa82e7c783b03d004cbb0b07ec324.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/d09b071e7c45661633b941f7b0ec56114488dee6266409896b09d6668a3dd1c9.webp",
+            "brief": "Connect to Postgres, manage databases, and query data securely and efficiently",
+            "description": "Engage directly with your Postgres database to explore tables, execute queries, manage backups, and oversee migrations. Experience secure, context-aware data access that empowers you to make informed decisions with up-to-date information."
+        },
+        {
+            "uid": "838d5e1c-7dd4-4782-9429-c459126707c7",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Sentry",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/0fbf290e9ca06ddb007e848322dcb4865b4d267caf8266b2aeb59fa17b836e42.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/003f844c93e4376c74529a2386da162468086dd1df4460469b0a3a03ba12507d.webp",
+            "brief": "Review errors, analyze root causes, and suggest fixes for rapid issue resolution",
+            "description": "Instantly access comprehensive Sentry issue data, manage projects and teams, and leverage Seer’s automated analysis for root cause identification. Harness rich Sentry insights to streamline error detection and accelerate fixes in your applications."
+        },
+        {
+            "uid": "bdfa81ea-c0ca-4022-bba1-805c48b583c1",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Hugging Face",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/079ad2504ae4f408e02045743b6c13db005930a96bfd950556370f9f45f47f21.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/079ad2504ae4f408e02045743b6c13db005930a96bfd950556370f9f45f47f21.webp",
+            "brief": "Explore AI models, access datasets, and discover the latest research trends",
+            "description": "Connect Hugging Face to Manus to search and access AI models, datasets, research papers, and Hugging Face Hub documentation."
+        },
+        {
+            "uid": "2a574fdc-89ab-4ad7-b334-e2c156201b6f",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Perplexity",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/d500b20e3643bcb3f660d40c0a6be5190f2e2ac66ca84b62d73762cd2bd8ac3f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/d24b6cb7ee2fe60309d7da4b7e07cada08c8621a207a39e14096e0adb8a9364c.webp",
+            "brief": "Search real-time information and get accurate answers with reliable citations",
+            "description": "Provide real-time search and intelligent Q&A services, combining accurate information retrieval with reliable citations for research and decision-making needs."
+        },
+        {
+            "uid": "bbec86c8-29f6-4149-9bba-d5c66bd6a701",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Cohere",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/28/cfa97d813ee274435ea3511171067325506da91c9bc0aa3d8a6a322578cd092b.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/28/cfa97d813ee274435ea3511171067325506da91c9bc0aa3d8a6a322578cd092b.webp",
+            "brief": "Build enterprise AI applications and optimize text processing workflows",
+            "description": "Build enterprise-grade natural language processing applications, optimizing text understanding, generation, and classification with customizable AI solutions and development tools."
+        },
+        {
+            "uid": "b389f747-6221-41aa-9dbb-732a97a02ea6",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "HubSpot",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/499a07c88d1da7b09dceb16e66f7c21d92cc9ee66d40a4c34f9a2a8b38e8ca7c.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/499a07c88d1da7b09dceb16e66f7c21d92cc9ee66d40a4c34f9a2a8b38e8ca7c.webp",
+            "brief": "Search CRM data, track contacts, and analyze sales and marketing insights",
+            "description": "Engage with your HubSpot CRM data in Manus to receive instant, customized insights. Effortlessly search and retrieve information on contacts, deals, companies, and tickets."
+        },
+        {
+            "uid": "73f5f556-978a-4f8a-85b3-ef2eec4473e5",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Intercom",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b61916dad643cfc6d9af095da14695714fe258286f79a1654fba9d95720a0f9f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/9de038f3a96cd520cabcfbee8dc21213bb8c4d5531072319405610fbf831aac1.webp",
+            "brief": "Access customer conversations, analyze feedback, and generate actionable insights",
+            "description": "Search, retrieve, and manage Intercom conversations and contacts using powerful tools like universal search, detailed fetch, and direct API access. This streamlines workflows, boosts efficiency, and ensures AI assistants maintain context about your workspace."
+        },
+        {
+            "uid": "23181678-c628-4c53-9a77-36778a36bbe5",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "ElevenLabs",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/1ec3a8dabcd0a480b65fa054394bcf26b6653e8957a3f7ee99b261df42e6bfda.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/5730cce1fa2bd7a794b7830970ca246dd19d51df3520366b4752472b80c6a9aa.webp",
+            "brief": "Generate realistic voices, clone speech, and create custom audio content",
+            "description": "Generate natural, lifelike speech using deep learning technology, featuring voice cloning, multilingual synthesis, and personalized audio content creation services."
+        },
+        {
+            "uid": "29986b52-7cbb-4d5e-9263-dd0abacaf28d",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Stripe",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b309dee4acc93698682b295bcefdb2e398f3c2a368b6e063b08457863ffb4652.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b309dee4acc93698682b295bcefdb2e398f3c2a368b6e063b08457863ffb4652.webp",
+            "brief": "Streamline business billing, payments, and account management",
+            "description": "Streamline Stripe account management by securely overseeing customers, billing, payments, and accessing Stripe documentation through MCP."
+        },
+        {
+            "uid": "491cde51-195c-4e72-96ea-8d80557c3b58",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Grok",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/a2f6ca089f299cbf1865d781c4b0259d60bb28a2a1e09029c6d57d887673920f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/05/026b4d5d8cf7fb6276e0df0fd1a7c79a0be9fd0004e867e59a93dc672fd63117.webp",
+            "brief": "Access real-time information and engage in intelligent conversations",
+            "description": "Provide real-time information retrieval and intelligent analysis, supporting complex problem-solving, data insights, and decision-making based on current information."
+        },
+        {
+            "uid": "e90398ef-c17d-46e8-86d6-0bd98642cbbb",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "PayPal for Business",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/dcbca994d28b95b66396590cace7b7a79aa8b7de99e31369d43dcd310e2a05e2.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/dcbca994d28b95b66396590cace7b7a79aa8b7de99e31369d43dcd310e2a05e2.webp",
+            "brief": "Manage transactions, invoices, and business operations efficiently",
+            "description": "Simplify PayPal operations by automating transaction handling, invoice management, and account administration with the MCP server. Merchants and businesses can leverage natural language tools for efficient and secure PayPal management."
+        },
+        {
+            "uid": "c55a74cf-a236-4eda-8885-365d336cae4b",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "OpenRouter",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b5506aeb754be8424bb6e7c906860aeff057363cfbac51fffd1b980dc502d469.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/626bf5dc828e205a75af343157209b3b64138434c2a796a6b1bf76013e0b12f5.webp",
+            "brief": "Access multiple AI models and manage API calls through unified interface",
+            "description": "Access multiple AI model services through unified interface, simplifying API management and optimizing switching between different models for seamless usage."
+        },
+        {
+            "uid": "a104e1ac-73e5-482f-96e6-8b95f4756f27",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "RevenueCat",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/03/b0fb48fa7c3cd88c18bdad56ee7c0cb84eac6eb1bb720620ffc02eac2805808c.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/03/b0fb48fa7c3cd88c18bdad56ee7c0cb84eac6eb1bb720620ffc02eac2805808c.webp",
+            "brief": "Manage subscription apps, control entitlements, and automate workflows",
+            "description": "Connect Manus to your RevenueCat workspace to create, update, and organize projects, subscription apps, products, entitlements, offerings, and paywalls."
+        },
+        {
+            "uid": "305b3b49-32ce-4b2b-a355-3492fe85d17f",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Ahrefs",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/02/56f4348fe7ca6cfd784320a1ec79095b226efe569f066d8d6914e2a881b0b8cd.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/02/56f4348fe7ca6cfd784320a1ec79095b226efe569f066d8d6914e2a881b0b8cd.webp",
+            "brief": "Optimize SEO strategies, analyze keywords, and track backlink performance",
+            "description": "Optimize search engine marketing strategies, analyzing keyword rankings, backlink building, and competitor SEO performance to improve website visibility and traffic."
+        },
+        {
+            "uid": "9b37aa72-4089-4f25-b774-122860ba61fa",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Close",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/18/578e6ac4023428e80d91fa202157f2d7f06626696a5c5d89001ecedcbc913abc.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/18/578e6ac4023428e80d91fa202157f2d7f06626696a5c5d89001ecedcbc913abc.webp",
+            "brief": "Automate your sales leads pipeline with Close CRM",
+            "description": "Streamline lead management, track opportunities, build email templates and accelerate deals with Close."
+        },
+        {
+            "uid": "7c635638-0b9f-40f4-b5c8-6f2762416d79",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Xero",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/4b4ba9807bf4e4e29abd808329bd6aaefdcfd6005f7ee43753d92e80607cc853.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/4b4ba9807bf4e4e29abd808329bd6aaefdcfd6005f7ee43753d92e80607cc853.webp",
+            "brief": "View financial data, generate reports, and gain personalized business insights",
+            "description": "Chat with your Xero accounting data directly to access instant, personalized financial insights. Effortlessly query key accounting objects like invoices, contacts, accounts, payroll, and reports."
+        },
+        {
+            "uid": "700c656f-b4a4-4e39-a886-a20782d99b6f",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Similarweb",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/9a6466b79f8ce0e229b23bad77b9be25257a26db876502700752ba5ab4e58967.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/05/28761bd902ade928ad94afe4fba2badb922625e8017b5badd1d063e0e25ba15b.webp",
+            "brief": "Analyze website traffic and gain competitive market intelligence insights",
+            "description": "Analyze website traffic and digital marketing data, gaining competitor insights, market trends, and user behavior analysis for informed business decisions."
+        },
+        {
+            "uid": "2918a878-d84d-47af-94ce-4967b72506f5",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Dropbox",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/12/08/2dfe85a8a302af4faf2615a75bf679eb39b9a53836f06f2ec7d6b419eb805c78.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/12/08/2dfe85a8a302af4faf2615a75bf679eb39b9a53836f06f2ec7d6b419eb805c78.webp",
+            "brief": "Manage files, folders, and sharing in Dropbox",
+            "description": "Upload, download, and organize files in Dropbox programmatically, manage sharing permissions, and access team features using the official Python SDK."
+        },
+        {
+            "uid": "be268223-40b2-4f3c-a907-c12eb1699283",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "My Browser",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/27/be92248c8db2f0f71a48f9536d8ae1d8ac012d88f7fb79ccf23b3580faea9846.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/27/a4a2c85210889e964361c636ded2df04ead5e0ceccc9f66017dfe0302b0c1f38.webp",
+            "brief": "Access the web on your own browser",
+            "description": "Install the Manus extension to help your agent access sites that require logins or have heightened security. It works with Chrome and compatible browsers like Edge, Brave, and Arc."
+        },
+        {
+            "uid": "5c305236-d14e-43f7-93ff-b288afd26f09",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Flux",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/01/6c24b4d0979b49f0a0a81e66b169b80895b94b8a731535ecaa19304343ff6132.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/01/417b88f954c464dae388d41e498e0a94a513e74ca34fa9fa7f96e1f43b652559.webp",
+            "brief": "Create stunning AI-generated images with diverse artistic styles and concepts",
+            "description": "Generate stunning AI images with advanced algorithms, supporting diverse artistic styles and creative concept visualization for customized content creation."
+        },
+        {
+            "uid": "d669ca60-22cf-4e16-93d4-845071f9216c",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Airtable",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/f910098dac17895243fc0ee61fa911cabb4876f43d8506b57e89bea6b772ff05.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/f910098dac17895243fc0ee61fa911cabb4876f43d8506b57e89bea6b772ff05.webp",
+            "brief": "Organize structured data, manage records, and collaborate with your team",
+            "description": "Connect Manus to your Airtable bases, allowing you to read, search, and update records or manage tables directly through automated tools. It streamlines data access and editing for smarter workflows."
+        },
+        {
+            "uid": "888c4ef0-4ed7-4f8b-ade0-55a86fc531dc",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Dify",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/03/93c9159f45ec1a6cecee2bce2bf1fac3ef429712c061494346731b572100ed9a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/05/04e24fbe09c6d372d0f1393d0b4529ee86d7d267ada3347916b5d28234bcb4a4.webp",
+            "brief": "Connect Dify and orchestrate AI-powered workflows across your favorite tools",
+            "description": "Automate business processes and supercharge productivity by exposing Dify workflows as MCP servers. Trigger actions, query data, and manage tasks directly from your Dify apps within Manus."
+        },
+        {
+            "uid": "99474cab-58bf-47ae-af0e-43c156703be9",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Kling",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/47e077b7a189f573c2e6fadc619135ef5d4840392c6d4a3f1fd0b995eab7e084.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/47e077b7a189f573c2e6fadc619135ef5d4840392c6d4a3f1fd0b995eab7e084.webp",
+            "brief": "Generate high-quality AI video content and bring creative visual concepts to life",
+            "description": "Create high-quality AI-generated videos from text descriptions, transforming creative concepts into dynamic visual content with intelligent automation."
+        },
+        {
+            "uid": "9444d960-ab7e-450f-9cb9-b9467fb0adda",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Gmail",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/67030616adb5e0ee57ead43394db33e557c56158e0047655fd695f353a9454ae.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/67030616adb5e0ee57ead43394db33e557c56158e0047655fd695f353a9454ae.webp",
+            "brief": "Draft replies, search your inbox, and summarize email threads instantly",
+            "description": "Access, search, organize and reply to emails easily with Manus for improved productivity."
+        },
+        {
+            "uid": "dd5abf31-7ad3-4c0b-9b9a-f0a576645baf",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Google Calendar",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/4ea9c5a92002d43fa460de537cd79c9f325d6aa22c4a82a7ba4cf6f50dd3303a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/4ea9c5a92002d43fa460de537cd79c9f325d6aa22c4a82a7ba4cf6f50dd3303a.webp",
+            "brief": "Understand your schedule, manage events, and optimize your time effectively",
+            "description": "Organize events, set reminders, and automate scheduling with Manus for greater efficiency."
+        },
+        {
+            "uid": "3db6c7f4-0ce6-4b76-baad-c6e3c4882acd",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Tripo AI",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/806009c587cc2d868f0c8e2e04f3cacd80788eea5bb7a9129b7c11904a6e392e.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/f351b021c47ff9e0e7ffe153c36f7ee8ef7bc1d846335653b659b0c1ea3dc6d8.webp",
+            "brief": "Transform text or images into detailed 3D models quickly and efficiently",
+            "description": "Rapidly convert text descriptions or 2D images into high-quality 3D models, streamlining three-dimensional content creation and product design workflows."
+        },
+        {
+            "uid": "119e6b13-c2e3-48db-b568-f82191de6b4e",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Cloudflare",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/bead2275e1f603c9958585b26af76c0ac0a33ae7a75b4a9d054ec4dbd8c53239.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/bead2275e1f603c9958585b26af76c0ac0a33ae7a75b4a9d054ec4dbd8c53239.webp",
+            "brief": "Manage Cloudflare Workers, build applications, and deploy online resources",
+            "description": "Easily control your Cloudflare Workers platform with natural language. Create, deploy, and manage Workers, KV namespaces, R2 buckets, D1 databases, and Hyperdrive configurations."
+        },
+        {
+            "uid": "f8900a57-4bd7-46cc-83a3-5ebd2420a817",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Google Drive",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/20/e1b2e58265cb7a57264764d6184467e67b69e83e424cae854a9bb93ac5ddc6c2.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/20/e1b2e58265cb7a57264764d6184467e67b69e83e424cae854a9bb93ac5ddc6c2.webp",
+            "brief": "Access your files, search instantly, and let Manus help you manage documents intelligently",
+            "description": "Find files, analyze content, automate organization, and collaborate more efficiently by connecting Google Drive with Manus"
+        },
+        {
+            "uid": "89dac2c3-74d0-4f94-86d1-0ee6c4566193",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "PostHog",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/4da27a3481c6abf4408952bc01d85d32452f5b20880d24e0addf7193c33de584.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/b17b9779754a8a2da525721387cac0da71336d3183e24671d16ae04c3a07618a.webp",
+            "brief": "Perform product analytics, manage feature flags, and run experiments",
+            "description": "Transform your product analytics with AI-powered insights. Easily perform data analytics, manage feature flags, and run experiments using natural language commands."
+        },
+        {
+            "uid": "356d5bc1-fb9f-4fa1-babb-05039dc09d63",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Playwright",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/986e0a96f74eb1b3b8af4faf655626eed7bb5a095680de0f3a7df59e960e4997.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/986e0a96f74eb1b3b8af4faf655626eed7bb5a095680de0f3a7df59e960e4997.webp",
+            "brief": "Automate browsers for testing, scraping, and more with Playwright",
+            "description": "Automate and interact with browsers using Playwright. Click, fill forms, upload files, manage tabs, capture screenshots, and more."
+        },
+        {
+            "uid": "d6b4170a-4001-450d-823a-287dfd9716a7",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "n8n",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/1e399dd42cc91ed26957533b17598018c766c84943582de857db90713016a092.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/1e399dd42cc91ed26957533b17598018c766c84943582de857db90713016a092.webp",
+            "brief": "Create automated workflows and seamlessly connect different applications",
+            "description": "Create no-code automation workflows, connecting various applications and services to simplify repetitive tasks and optimize business process data synchronization."
+        },
+        {
+            "uid": "45d392d3-d308-4cdb-8a2d-5d249bcec594",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Jam",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/ff9318bae521241799eafd5f77b614cd1464e24d3224fa716d18d290e5fa7a4f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/ff9318bae521241799eafd5f77b614cd1464e24d3224fa716d18d290e5fa7a4f.webp",
+            "brief": "Analyze screen recordings, context, and issues automatically",
+            "description": "Analyze Jam recordings and automatically load its data, including video, user events, console logs, errors, and network requests into Manus."
+        },
+        {
+            "uid": "d485c6dd-4939-40fb-9c4a-c9821971468b",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Outlook Mail",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/outlook-mail.png",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/outlook-mail.png",
+            "brief": "Write, search, and manage your Outlook emails seamlessly within Manus",
+            "description": "Access, search, organize, and reply to emails all in Manus, with a focused workspace that brings Outlook into your daily flow."
+        },
+        {
+            "uid": "c63d86db-4c98-483a-af0c-f94721d7f2a5",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Canva",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/055864f5f84dbe17cb653fa52ad46fd0505877c57d01043c9ffdf6baf4e25fd7.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/055864f5f84dbe17cb653fa52ad46fd0505877c57d01043c9ffdf6baf4e25fd7.webp",
+            "brief": "Discover, autofill, and export Canva designs in one place",
+            "description": "Search, import, autofill, organize, and export your Canva projects. Use Manus to streamline your creative work."
+        },
+        {
+            "uid": "fb659ead-d821-40cc-ab35-1cad9af13649",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Stripe API",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b309dee4acc93698682b295bcefdb2e398f3c2a368b6e063b08457863ffb4652.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/b309dee4acc93698682b295bcefdb2e398f3c2a368b6e063b08457863ffb4652.webp",
+            "brief": "Programmatically manage transactions, and automate billing for your business",
+            "description": "Empower your business to programmatically accept payments, manage subscriptions, automate billing, and gain financial insights using secure and flexible Stripe API tools."
+        },
+        {
+            "uid": "1d489fb9-0601-4ea7-9942-b866657178c1",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Webflow",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/eccf14d9e2cf912e00bf562f4556f2c8cb7c68fe167a916899d527a30a41ed6f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/eccf14d9e2cf912e00bf562f4556f2c8cb7c68fe167a916899d527a30a41ed6f.webp",
+            "brief": "Manage Webflow sites, edit pages, and organize your CMS content with ease",
+            "description": "Interact directly with your Webflow data to manage sites, pages, CMS collections, components, and custom code. Query and update content, publish changes, and automate workflows."
+        },
+        {
+            "uid": "4bca3029-d276-4644-898d-578a723361b2",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Outlook Calendar",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/outlook-calendar.png",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/outlook-calendar.png",
+            "brief": "Schedule, view, and manage your Outlook events just with a prompt",
+            "description": "Organize events, set reminders, and automate scheduling in Manus with a clear calendar view that keeps everything in one place."
+        },
+        {
+            "uid": "80bca437-287e-4407-adf0-1a0b298528e5",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Cloudflare API",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/bead2275e1f603c9958585b26af76c0ac0a33ae7a75b4a9d054ec4dbd8c53239.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/bead2275e1f603c9958585b26af76c0ac0a33ae7a75b4a9d054ec4dbd8c53239.webp",
+            "brief": "Automate and manage your web infrastructure with the Cloudflare API",
+            "description": "Streamline your web operations by automating website deployment, DNS management, security configuration, and integrations with popular tools using the Cloudflare API."
+        },
+        {
+            "uid": "86a04f98-35cf-4099-9044-ab851a473cf5",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Supabase API",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/178c50ad48998d8331a9667ef3dcd1638355bc2f4933e61f35bf9c7140d141c8.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/178c50ad48998d8331a9667ef3dcd1638355bc2f4933e61f35bf9c7140d141c8.webp",
+            "brief": "Manage Postgres databases with authentication, file storage, and more",
+            "description": "Manage Postgres databases, user authentication, file storage, and real-time subscriptions through Supabase Python SDK with complete backend development capabilities."
+        },
+        {
+            "uid": "d0fa4acf-7cf6-4402-bd84-82a850342a79",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Wix",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/9d6084d679e6313ecbc660b34fc48f93e981e59305bf8c948a71f6dfaa01340f.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/bd6bbf3c86de7b5e8f4302f79e702f4a2acbbaf8281d8784eb293f46454b2d5f.webp",
+            "brief": "Search website data, access content, and automate workflows within Wix",
+            "description": "Engage with your Wix site data for instant, personalized insights. Search docs, automate site management, and query key site objects like contacts, orders, and products."
+        },
+        {
+            "uid": "0d21d573-1ee0-484b-8e91-aed6534dbb19",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Granola",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/02/13/51fc905da4ed42464f4433c68f781196c3fb9d76930ead2545bef73bb5c34d7e.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/02/13/51fc905da4ed42464f4433c68f781196c3fb9d76930ead2545bef73bb5c34d7e.webp",
+            "brief": "Search, summarize and gather insights from every meeting transcript",
+            "description": "Connect Granola to search, summarize, and surface insights from every meeting transcript."
+        },
+        {
+            "uid": "1b62b634-58e9-4b49-b327-339cc5aaeaf5",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Fireflies",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/17d8fe06be62492ef944cb90475ee182f49f05c0456702bfc3faafd555c9bef0.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/17d8fe06be62492ef944cb90475ee182f49f05c0456702bfc3faafd555c9bef0.webp",
+            "brief": "Automate meeting transcription and conversation insights",
+            "description": "Power meeting productivity with Fireflies by automating transcription and summaries for fast follow-ups"
+        },
+        {
+            "uid": "f7bbbff0-61fe-458b-975a-3e2f6a91269c",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "tl;dv",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/74000713e3e5810634ef98b17abce3791c1681d9482122decf5a0b75d2d44e58.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/804befaf0f8772f8d70a82b1be749d1da2c0ddb0d8fe24b23f1cc8a413894812.webp",
+            "brief": "Streamline meeting workflows with transcriptions and call highlights",
+            "description": "Automate meeting management with tools to retrieve details, transcribe conversations, and extract highlights."
+        },
+        {
+            "uid": "abb9ed36-e693-44ab-be3d-1f5c3bb02294",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Firecrawl",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/aff80ca5ec50b4b4c4a20279ccc3546fb7a75ccdb700e366d9f212585c4902b6.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/0e0982b6b1fbecdf02c03826f63f367842006902fcb90ccf363492a34d637373.webp",
+            "brief": "Unlock powerful web scraping, crawling, and search capabilities",
+            "description": "Integrate with Firecrawl to provide robust web scraping, crawling, and search functionalities. Ideal for data collection, content extraction, and deep research."
+        },
+        {
+            "uid": "2900673c-afaa-4dfa-901d-00a6b3f7275e",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Todoist",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/c1cfa3cb5de849fed8a52687626df52d859f9b971081557aed18d7a2fb1c01b7.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/c1cfa3cb5de849fed8a52687626df52d859f9b971081557aed18d7a2fb1c01b7.webp",
+            "brief": "Organize your to-dos, streamline projects, and boost productivity",
+            "description": "Effortlessly organize your to-dos in Todoist. You can add and complete tasks, manage projects and sections, find what you need fast, and keep every detail in sync."
+        },
+        {
+            "uid": "376008de-cd2a-4bfb-93aa-2652b8585c8e",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Polygon.io",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/2bfbf460efac8b399a2d456df37781a9609ff3c03849de13a6f239495d593171.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/2bfbf460efac8b399a2d456df37781a9609ff3c03849de13a6f239495d593171.webp",
+            "brief": "Access real-time and historical market data for stocks, forex, crypto, and options",
+            "description": "Access comprehensive US market data including stocks, options, forex, and crypto through Polygon.io API with real-time and historical information."
+        },
+        {
+            "uid": "d1edd2c7-392f-4132-bcf7-7f86efe1db54",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "ZoomInfo",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/12/03/79540b13fe3814b6b966d4255eef9b74f71873b2aaff5e5520a10d66ef215b71.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/12/03/79540b13fe3814b6b966d4255eef9b74f71873b2aaff5e5520a10d66ef215b71.webp",
+            "brief": "Access comprehensive B2B contact and company intelligence data",
+            "description": "Use ZoomInfo’s database to find contacts and companies, and enrich profiles with job details, management levels, financials, and contact information for targeted prospecting and research."
+        },
+        {
+            "uid": "331ff697-8348-4ed7-a596-7df98740fc1f",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Mailchimp Marketing",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/14/880b4067bec129175734c8e201e1f2c709cdcfabc9e468b1eaec601ffcbd4f9c.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/14/880b4067bec129175734c8e201e1f2c709cdcfabc9e468b1eaec601ffcbd4f9c.webp",
+            "brief": "Manage audiences, send campaigns, and track email marketing performance",
+            "description": "Build and manage email marketing campaigns, control subscriber lists with segmentation and tags, and analyze campaign performance."
+        },
+        {
+            "uid": "bb2a05d0-d728-48eb-b796-9b71e4f9c9ee",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Apollo",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/31/ae3858c1ec05034fc5c7de83131b84167961dd512b348a2df4ed97ca9f7ac428.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/31/ae3858c1ec05034fc5c7de83131b84167961dd512b348a2df4ed97ca9f7ac428.webp",
+            "brief": "Automate B2B sales prospecting, lead generation, and deal execution",
+            "description": "Integrate with Apollo.io's sales platform and B2B database to programmatically search for prospects, enrich contact and company data for automated sales engagement workflows."
+        },
+        {
+            "uid": "9fe14dac-4288-4371-91a8-86a36051a865",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Metabase",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/3415d82ff7a60ba8f39dcdf2d4bbb3a2dd64db6b6fbdd6b553664fef23d04bcc.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/3415d82ff7a60ba8f39dcdf2d4bbb3a2dd64db6b6fbdd6b553664fef23d04bcc.webp",
+            "brief": "Access Metabase data analytics with caching and response optimization",
+            "description": "Access, search, list, retrieve, and export Metabase analytics data quickly with advanced caching and response optimization. Handle large datasets effortlessly for AI-powered analytics workflows."
+        },
+        {
+            "uid": "3cb9f78b-b53a-49ef-b65e-b56eeddd641d",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Explorium",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/859eb15d6c6553e105d33e0460ab0aba70ce98859983d6f1c225217aa673c372.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/26/859eb15d6c6553e105d33e0460ab0aba70ce98859983d6f1c225217aa673c372.webp",
+            "brief": "Access comprehensive business and contact data for AI-powered insights",
+            "description": "Integrate Explorium’s extensive business and prospect data with Manus. Access detailed company information, find and research professionals, and monitor key business events."
+        },
+        {
+            "uid": "f7f15fe8-15cf-4fb9-a546-720f16dcf5e6",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Serena",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/2b600bf82eb664e5cf0c6861ef6b65ba04713e4164eacfad66030c48c6fa2b04.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/d14c0190f689c4a7c0305190dbd4977c7322c7632f07521fc0a56c556d8a4b09.webp",
+            "brief": "Unlock efficient code management with Serena’s semantic and editing tools",
+            "description": "Empower Manus by integrating Serena’s semantic code retrieval and editing tools for precise code search, symbol editing, and streamlined project handling."
+        },
+        {
+            "uid": "0cac2dee-dc77-43f4-87cc-df68fb723808",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Wrike",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/479214726ecf1132b6604890b3db5c6523a6e8462c5ae06d3c4f0831cde2bb2a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/479214726ecf1132b6604890b3db5c6523a6e8462c5ae06d3c4f0831cde2bb2a.webp",
+            "brief": "Manage projects, organize tasks, and collaborate seamlessly in Wrike",
+            "description": "Unlock Wrike’s powerful features for real-time project tracking, task management, folder organization, team collaboration, and workflow customization."
+        },
+        {
+            "uid": "c8298c13-6d9a-4847-9f1f-1523952fddbd",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "JSONBin.io",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/9c5f01c1242e14c15cda99afd8c985795ee4c795074b87f3371a3fae59714847.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/9c5f01c1242e14c15cda99afd8c985795ee4c795074b87f3371a3fae59714847.webp",
+            "brief": "Store and manage JSON data with fast API access for development projects",
+            "description": "Store and manage JSON format data with fast API access, supporting data storage and retrieval needs for development projects."
+        },
+        {
+            "uid": "c183add9-c22c-4199-b7f2-d885571afa3a",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "HeyGen",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/2e16a94911f20fbbfb6d6c31c8b086c868d4e8097555100a1cab6eea2dbb858a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/2e16a94911f20fbbfb6d6c31c8b086c868d4e8097555100a1cab6eea2dbb858a.webp",
+            "brief": "Create lifelike AI avatars, generate voices, and produce realistic videos",
+            "description": "Generate professional-quality avatar videos with realistic voices and facial gestures with HeyGen MCP."
+        },
+        {
+            "uid": "5db8da88-d801-490d-9094-47d538b484df",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Invideo",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/d3aab61e93b02eb5c85299d721389cb44df6edfeb3becd4bda7ed3ba9c08b089.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/eb042fcf1535b83dddffe6b45074e339ab81baeafc216279975cab092574267a.webp",
+            "brief": "Transform ideas into professional videos and create engaging visual stories",
+            "description": "Use natural language commands to turn text prompts into full videos with AI-generated scripts, visuals, voiceovers, and subtitles, ready for platforms like YouTube, TikTok, and Instagram Reels."
+        },
+        {
+            "uid": "bbb0df76-66bd-4a24-ae4f-2aac4750d90b",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "GitHub",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/6e23ba783317e0dfcd2b4c45147715e74d2a0d3370ede7b73cc6c8dfd1f24084.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/08/29/929f4a07401e2208f3ed494ad8268fd86e5c8091080ab3c2aabf5b2eeac88eba.webp",
+            "brief": "Manage repositories, track code changes, and collaborate on team projects",
+            "description": "Access, search, and organize repos, track issues, review pull requests, and automate workflows directly in Manus."
+        },
+        {
+            "uid": "4b899211-fd12-410e-a8d2-264a409cbc78",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Instagram",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/26/170ac59540663cbc7183429384509e312de08e37d66943fc713a57c1a26e8151.svg",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/26/170ac59540663cbc7183429384509e312de08e37d66943fc713a57c1a26e8151.svg",
+            "brief": "Generate and publish Posts, Stories, or Reels to Instagram.",
+            "description": "Connect your Instagram account to ideate, plan, and automatically publish content as Posts, Stories, and Reels."
+        },
+        {
+            "uid": "c073ede4-35a7-4c89-8158-c9b40c489932",
+            "type": "CONNECTOR_TYPE_BUILTIN",
+            "name": "Meta Ads Manager",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/c3a064cd48ab42937e5898827b86b12565dc91242dd55861fa427d2678941bc3.svg",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/c3a064cd48ab42937e5898827b86b12565dc91242dd55861fa427d2678941bc3.svg",
+            "brief": "Automate ads insights and optimization to save hours and maximize profits",
+            "description": "Connect Meta Ads to Manus to analyze performance, get optimization recommendations in natural language, and automate reporting."
+        },
+        {
+            "uid": "a4fc87c3-c8bf-4344-a776-3b42b0546f13",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Hume",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/07/ecc9dac09a404d30c21ca8e700527391a16e1c5561dd136b50cdb5d3f37b49a4.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/11/07/ecc9dac09a404d30c21ca8e700527391a16e1c5561dd136b50cdb5d3f37b49a4.webp",
+            "brief": "Create expressive text-to-speech audio with Hume AI",
+            "description": "Create emotionally nuanced, natural text-to-speech using preset or custom voices to produce replayable audio for audiobooks, podcasts, and video voiceovers."
+        },
+        {
+            "uid": "94c74572-5587-4b9e-8614-2b2cef7413b6",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "LINE",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/31/b98e8ecd7e4b190c7515d5a5fabfe3902ee4e0df8c6cb057536614d409bfa583.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/31/b98e8ecd7e4b190c7515d5a5fabfe3902ee4e0df8c6cb057536614d409bfa583.webp",
+            "brief": "Connect to LINE Official Accounts for automated messaging",
+            "description": "Send text and flex messages, broadcast announcements, retrieve user profiles, and manage rich menus through LINE MCP. Automate conversations with your LINE followers."
+        },
+        {
+            "uid": "92262486-6778-4451-9921-8c29c9dfa60a",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "Jotform",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/03/8ca8cd2b8b107aad508e257b64a0f51e073b5f49aa80f15d5c2faa32218c58b5.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/03/16864697ba967d0b6d03d2c03800273cb78c65df3cbbe1b99253979860db44ca.webp",
+            "brief": "Create, manage, and collect data through powerful online forms",
+            "description": "Streamline data collection with Jotform's comprehensive form builder, enabling automated form creation, submission management, and seamless workflow integration"
+        },
+        {
+            "uid": "658a2969-b74c-42c5-a7b3-9b98128ff724",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "Typeform",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/03/e9e94134b62940961e7a9a14d96684c02adf35f4de6a25aed8c9ff9490b3d806.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/10/03/16e863ab4f4a87080d4caa725fd3a20edd7bf207129b50d9d9cbd99b219e1b93.webp",
+            "brief": "Create forms, collect responses, and manage webhooks",
+            "description": "Build and control Typeform surveys programmatically, retrieve responses on demand, and automate workflows with webhooks."
+        },
+        {
+            "uid": "63e9fd2a-2804-4509-897a-a9544c127b2b",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "PopHIVE",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/25/138665e137ed35eb320078f4cefe426f6ce220dac8d922c5a4f2f4cc0fceffbe.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/25/70cd0e088a5b12c4bd0194716abba24cb73b67a714fe483c9f83a821d6b95a3b.webp",
+            "brief": "Access public health data from PopHIVE dashboards",
+            "description": "Explore comprehensive public health datasets from Yale’s PopHIVE, including immunization, disease surveillance, and hospital trends."
+        },
+        {
+            "uid": "062ba883-f91d-46f2-b1d1-864924865703",
+            "type": "CONNECTOR_TYPE_BYOK",
+            "name": "HeyGen API",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/2e16a94911f20fbbfb6d6c31c8b086c868d4e8097555100a1cab6eea2dbb858a.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2026/01/23/2e16a94911f20fbbfb6d6c31c8b086c868d4e8097555100a1cab6eea2dbb858a.webp",
+            "brief": "Generate AI-powered videos with realistic avatars with HeyGen API",
+            "description": "Programmatically create professional-quality avatar videos with realistic voices and facial gestures using HeyGen's REST API."
+        },
+        {
+            "uid": "1987d07e-eb26-479f-867b-ad4b79c80d11",
+            "type": "CONNECTOR_TYPE_MCP",
+            "name": "MiniMax",
+            "iconUrl": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/a30c204f6dc481b296754ae89a44f45f21646b48045c09a5c737cbdc914a2fe4.webp",
+            "iconUrlDark": "https://d1oupeiobkpcny.cloudfront.net/assets/dashboard/materials/2025/09/22/a30c204f6dc481b296754ae89a44f45f21646b48045c09a5c737cbdc914a2fe4.webp",
+            "brief": "Generate speech, music, images, and videos with MiniMax",
+            "description": "Create high-quality audio with over 300 voices in multiple languages, design custom voices with advanced cloning, and generate stunning images, videos, and music from simple text prompts."
+        }
+    ],
+    "total": 81
+}
