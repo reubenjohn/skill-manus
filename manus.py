@@ -222,10 +222,8 @@ class ManusAPI:
         interactiveMode: bool = False,
     ) -> JsonDict:
         """POST /v1/tasks - Create a new task."""
-        params: JsonDict = {"prompt": prompt}
-        for k, v in locals().items():
-            if k not in ("self", "prompt", "params") and v is not None and v is not False:
-                params[k] = v
+        params = {k: v for k, v in locals().items()
+                  if k != "self" and v is not None and v is not False}
         if "attachments" in params:
             params["attachments"] = [
                 {"type": "file_id", "file_id": fid} for fid in params["attachments"]
