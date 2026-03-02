@@ -156,20 +156,6 @@ class ManusClient:
 # ---------------------------------------------------------------------------
 
 
-def _remap(kwargs: JsonDict, key_map: Dict[str, str]) -> Optional[JsonDict]:
-    """Remap Python kwarg names to API parameter names, filtering None values.
-
-    >>> _remap({"order_by": "updated_at", "limit": None}, {"order_by": "orderBy"})
-    {'orderBy': 'updated_at'}
-    """
-    result: JsonDict = {}
-    for py_name, value in kwargs.items():
-        if value is None:
-            continue
-        result[key_map.get(py_name, py_name)] = value
-    return result or None
-
-
 def endpoint(
     http_method: str,
     path_template: str,
@@ -220,37 +206,26 @@ class ManusAPI:
 
     # --- Tasks ---
 
-    _CREATE_TASK_MAP: Dict[str, str] = {
-        "agent_profile": "agentProfile",
-        "task_mode": "taskMode",
-        "hide_in_task_list": "hideInTaskList",
-        "create_shareable_link": "createShareableLink",
-        "task_id": "taskId",
-        "project_id": "projectId",
-        "interactive_mode": "interactiveMode",
-    }
-
     @endpoint("POST", "/v1/tasks", send="body")
     def create_task(
         self,
         prompt: str,
-        agent_profile: Optional[str] = None,
-        task_mode: Optional[str] = None,
+        agentProfile: Optional[str] = None,
+        taskMode: Optional[str] = None,
         attachments: Optional[List[str]] = None,
         connectors: Optional[List[str]] = None,
-        hide_in_task_list: bool = False,
-        create_shareable_link: bool = False,
-        task_id: Optional[str] = None,
+        hideInTaskList: bool = False,
+        createShareableLink: bool = False,
+        taskId: Optional[str] = None,
         locale: Optional[str] = None,
-        project_id: Optional[str] = None,
-        interactive_mode: bool = False,
+        projectId: Optional[str] = None,
+        interactiveMode: bool = False,
     ) -> JsonDict:
         """POST /v1/tasks - Create a new task."""
-        # Collect all non-default kwargs via locals()
-        local = {k: v for k, v in locals().items()
-                 if k not in ("self", "prompt") and v is not None and v is not False}
-        params = _remap(local, self._CREATE_TASK_MAP) or {}
-        params["prompt"] = prompt
+        params: JsonDict = {"prompt": prompt}
+        for k, v in locals().items():
+            if k not in ("self", "prompt", "params") and v is not None and v is not False:
+                params[k] = v
         if "attachments" in params:
             params["attachments"] = [
                 {"type": "file_id", "file_id": fid} for fid in params["attachments"]
@@ -262,45 +237,34 @@ class ManusAPI:
         """GET /v1/tasks/{task_id} - Get task details."""
         return {"convert": "true"} if convert else None
 
-    _LIST_TASKS_MAP: Dict[str, str] = {
-        "order_by": "orderBy",
-        "created_after": "createdAfter",
-        "created_before": "createdBefore",
-    }
-
     @endpoint("GET", "/v1/tasks", send="query")
     def list_tasks(
         self,
         after: Optional[str] = None,
         limit: Optional[int] = None,
         order: Optional[str] = None,
-        order_by: Optional[str] = None,
+        orderBy: Optional[str] = None,
         query: Optional[str] = None,
         status: Optional[List[str]] = None,
-        created_after: Optional[str] = None,
-        created_before: Optional[str] = None,
+        createdAfter: Optional[str] = None,
+        createdBefore: Optional[str] = None,
         project_id: Optional[str] = None,
     ) -> Optional[JsonDict]:
         """GET /v1/tasks - List tasks with filtering and pagination."""
-        local = {k: v for k, v in locals().items() if k != "self"}
-        return _remap(local, self._LIST_TASKS_MAP)
-
-    _UPDATE_TASK_MAP: Dict[str, str] = {
-        "enable_shared": "enableShared",
-        "enable_visible_in_task_list": "enableVisibleInTaskList",
-    }
+        params = {k: v for k, v in locals().items() if k != "self" and v is not None}
+        return params or None
 
     @endpoint("PUT", "/v1/tasks/{task_id}", send="body")
     def update_task(
         self,
         task_id: str,
         title: Optional[str] = None,
-        enable_shared: Optional[bool] = None,
-        enable_visible_in_task_list: Optional[bool] = None,
+        enableShared: Optional[bool] = None,
+        enableVisibleInTaskList: Optional[bool] = None,
     ) -> Optional[JsonDict]:
         """PUT /v1/tasks/{task_id} - Update task metadata."""
-        local = {k: v for k, v in locals().items() if k not in ("self", "task_id")}
-        return _remap(local, self._UPDATE_TASK_MAP)
+        params = {k: v for k, v in locals().items() if k not in ("self", "task_id") and v is not None}
+        return params or None
 
     @endpoint("DELETE", "/v1/tasks/{task_id}")
     def delete_task(self, task_id: str) -> Optional[JsonDict]:
@@ -439,22 +403,22 @@ COMMANDS: Dict[str, CommandResource] = {
     "tasks": ("Manage tasks", {
         "create": ("create_task", "Create a new task", [
             Arg("--prompt", required=True, help="task instruction for the agent"),
-            Arg("--profile", key="agent_profile", default="manus-1.6",
+            Arg("--profile", key="agentProfile", default="manus-1.6",
                 choices=AGENT_PROFILES, help="agent profile (default: manus-1.6)"),
-            Arg("--mode", key="task_mode", choices=TASK_MODES, help="execution mode"),
+            Arg("--mode", key="taskMode", choices=TASK_MODES, help="execution mode"),
             Arg("--attachment", key="attachments", action="append",
                 help="file ID to attach (repeatable)"),
             Arg("--connector", key="connectors", action="append",
                 help="connector ID (repeatable)"),
-            Arg("--hide", key="hide_in_task_list", action="store_true",
+            Arg("--hide", key="hideInTaskList", action="store_true",
                 help="hide from task list"),
-            Arg("--shareable", key="create_shareable_link", action="store_true",
+            Arg("--shareable", key="createShareableLink", action="store_true",
                 help="create a public shareable link"),
-            Arg("--continue-task", key="task_id",
+            Arg("--continue-task", key="taskId",
                 help="existing task ID for multi-turn conversation"),
             Arg("--locale", help="locale code (e.g. en-US, zh-CN)"),
-            Arg("--project-id", key="project_id", help="project ID to associate with"),
-            Arg("--interactive", key="interactive_mode", action="store_true",
+            Arg("--project-id", key="projectId", help="project ID to associate with"),
+            Arg("--interactive", key="interactiveMode", action="store_true",
                 help="allow Manus to ask follow-up questions"),
         ]),
         "get": ("get_task", "Get task details", [
@@ -466,25 +430,25 @@ COMMANDS: Dict[str, CommandResource] = {
             Arg("--after", help="cursor: last task ID from previous page"),
             Arg("--limit", type=int, help="max results (1-1000, default: 100)"),
             Arg("--order", choices=["asc", "desc"], help="sort direction"),
-            Arg("--order-by", key="order_by", choices=["created_at", "updated_at"],
+            Arg("--order-by", key="orderBy", choices=["created_at", "updated_at"],
                 help="sort field"),
             Arg("--query", help="search title and body content"),
             Arg("--status", nargs="+", choices=TASK_STATUSES,
                 help="filter by status (space-separated)"),
-            Arg("--created-after", key="created_after",
+            Arg("--created-after", key="createdAfter",
                 help="unix timestamp: tasks created after"),
-            Arg("--created-before", key="created_before",
+            Arg("--created-before", key="createdBefore",
                 help="unix timestamp: tasks created before"),
             Arg("--project-id", key="project_id", help="filter by project ID"),
         ]),
         "update": ("update_task", "Update task metadata", [
             Arg("task_id", help="task ID"),
             Arg("--title", help="new title"),
-            Arg("--shared", key="enable_shared", action="store_true",
+            Arg("--shared", key="enableShared", action="store_true",
                 help="enable public sharing"),
-            Arg("--no-shared", key="enable_shared", action="store_false",
+            Arg("--no-shared", key="enableShared", action="store_false",
                 help="disable public sharing"),
-            Arg("--visible", key="enable_visible_in_task_list", action="store_true",
+            Arg("--visible", key="enableVisibleInTaskList", action="store_true",
                 help="show in task list"),
         ]),
         "delete": ("delete_task", "Permanently delete a task", [

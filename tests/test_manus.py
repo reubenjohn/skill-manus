@@ -184,16 +184,16 @@ class TestManusAPI(unittest.TestCase):
         self.client.request.return_value = {"task_id": "t1"}
         self.api.create_task(
             "Analyze data",
-            agent_profile="manus-1.6-max",
-            task_mode="agent",
+            agentProfile="manus-1.6-max",
+            taskMode="agent",
             attachments=["file1", "file2"],
             connectors=["gmail"],
-            hide_in_task_list=True,
-            create_shareable_link=True,
-            task_id="prev_t1",
+            hideInTaskList=True,
+            createShareableLink=True,
+            taskId="prev_t1",
             locale="en-US",
-            project_id="proj1",
-            interactive_mode=True,
+            projectId="proj1",
+            interactiveMode=True,
         )
         body = self.client.request.call_args[1]["body"]
         self.assertEqual(body["prompt"], "Analyze data")
@@ -244,7 +244,7 @@ class TestManusAPI(unittest.TestCase):
 
     def test_update_task(self):
         self.client.request.return_value = {"task_id": "t1", "task_title": "New"}
-        self.api.update_task("t1", title="New", enable_shared=True)
+        self.api.update_task("t1", title="New", enableShared=True)
         self.client.request.assert_called_once_with(
             "PUT", "/v1/tasks/t1",
             body={"title": "New", "enableShared": True}
